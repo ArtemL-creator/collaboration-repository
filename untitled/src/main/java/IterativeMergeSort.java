@@ -53,7 +53,6 @@ class GFG {
         k = l;
         while (i < n1 && j < n2) {
             if (lessIsEqualTo(L.get(i).getName(),R.get(j).getName())) {
-                //myList[k] = L[i];
                 myList.set(k, L.get(i));
                 i++;
             } else {
