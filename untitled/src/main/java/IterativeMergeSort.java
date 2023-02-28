@@ -1,13 +1,19 @@
 /* Iterative Java program for merge sort */
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 class GFG {
 
-    /* Iterative mergesort function to sor
-    t myList[0...n-1] */
+    static boolean lessIsEqualTo(String s1, String s2) {
+        int value;
+
+        value = s1.compareTo(s2);
+        if (value <= 0) return true;
+        else return false;
+    }
+
+    /* Iterative mergesort function to sort myList */
     static void mergeSort(List<Mouse> myList) {
         int n = myList.size();
         int curr_size;
@@ -42,44 +48,35 @@ class GFG {
             R.add(j, myList.get(m + 1 + j));
         }
 
-        /*System.out.println("Right:\n");
-        printArray(R);
-        System.out.println("\nLeft:\n");
-        printArray(L);*/
-        //System.out.println("Q " + !(L.get(i).getName().compareTo(R.get(j).getName())));
         i = 0;
         j = 0;
         k = l;
-       /* while (i < n1 && j < n2) {
-            if (L.get(i).getName().compareTo(R.get(j).getName())) {
-                myList[k] = L[i];
+        while (i < n1 && j < n2) {
+            if (lessIsEqualTo(L.get(i).getName(),R.get(j).getName())) {
+                //myList[k] = L[i];
+                myList.set(k, L.get(i));
                 i++;
             } else {
-                myList[k] = R[j];
+                myList.set(k,R.get(j));
                 j++;
             }
             k++;
         }
 
         while (i < n1) {
-            myList[k] = L[i];
+            myList.set(k, L.get(i));
             i++;
             k++;
         }
 
         while (j < n2) {
-            myList[k] = R[j];
+            myList.set(k,R.get(j));
             j++;
             k++;
-        }*/
+        }
     }
 
     static void printArray(List<Mouse> A) {
-        /*int size = A.size();
-        int i;
-        for (i=0; i < size; i++)
-            System.out.printf("%d ", A.get(i));
-        System.out.printf("\n");*/
         for (Mouse mouse : A) {
             System.out.println(mouse);
         }
@@ -101,13 +98,11 @@ class GFG {
         list.add(m5);
         list.add(m6);
 
-        //int arr[] = {12, 11, 13, 5, 6, 7};
-        int n = list.size();
+        int arr[] = {12, 11, 13, 5, 6, 7};
 
         System.out.printf("Given array is \n");
         printArray(list);
 
-        Collections.sort(list, Mouse.MouseNameComparator);
         mergeSort(list);
 
         System.out.printf("\nSorted array is \n");

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69bf7d93-c3b5-4a8c-b81e-34fcad8abbc7" name="Changes" comment="Merge" />
+    <list default="true" id="69bf7d93-c3b5-4a8c-b81e-34fcad8abbc7" name="Changes" comment="Merge">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/IterativeMergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IterativeMergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GFG.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GFG.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
