@@ -3,5 +3,3 @@
 #UliaP
 #sublystrum
 #misha-kaskin
-
-remote
