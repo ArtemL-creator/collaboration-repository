@@ -97,6 +97,8 @@ class GFG {
         list.add(m5);
         list.add(m6);
 
+        int arr[] = {12, 11, 13, 5, 6, 7};
+
         System.out.printf("Given array is \n");
         printArray(list);
 
