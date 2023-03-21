@@ -77,7 +77,7 @@ public class Main2 {
         while (reader.ready()) {
             boolean flag = true;
             for (char symbol : reader.readLine().toCharArray()) {
-                if (symbol != ' ' && flag) {
+                if (symbol != ' ' && flag && (symbol >= 'A' && symbol <= 'Z' || symbol >= 'a' && symbol <= 'z' || symbol >= 'А' && symbol <= 'п' || symbol >= 'р' && symbol <= 'ё')) {
                     count++;
                     flag = false;
                 } else if (symbol == ' '){
