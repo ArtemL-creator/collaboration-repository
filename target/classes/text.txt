@@ -1,1 +1,7 @@
+<<<<<<< HEAD
  в
+=======
+First lineX
+SecoXnd    line
+Third lXinex 1 sarsgsdf     32
+>>>>>>> 9456e99fe81f1a24b6ac8abf095623d45438f7a4
